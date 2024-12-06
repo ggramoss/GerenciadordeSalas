@@ -1,0 +1,37 @@
+<div class="container">
+    <h3>Formulário de Salas</h3>
+
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome:</label>
+        <input [(ngModel)]="sala.nome" class="form-control"
+            id="nome" placeholder="Nome da sala ...">
+    </div>
+
+    <div class="mb-3">
+        <label for="capacidade" class="form-label">Capacidade:</label>
+        <input type="number" [(ngModel)]="sala.capacidade" class="form-control"
+            id="capacidade" placeholder="Capacidade da sala ...">
+    </div>
+
+    <div class="mb-3">
+        <label for="equipamentos" class="form-label">Equipamentos:</label>
+        <input [(ngModel)]="sala.equipamentos" class="form-control"
+            id="equipamentos" placeholder="Equipamentos disponíveis ...">
+    </div>
+
+    <div class="mb-3">
+        <label for="localizacao" class="form-label">Localização:</label>
+        <input [(ngModel)]="sala.localizacao" class="form-control"
+            id="localizacao" placeholder="Localização da sala ...">
+    </div>
+
+    <button class="btn btn-primary me-3" (click)="salvar()">
+        {{ botaoAcao }}
+    </button>
+    <button class="btn btn-secondary" (click)="voltar()">
+        Voltar
+    </button>
+
+    <!-- Apenas para debug -->
+    <pre>{{ sala | json }}</pre>
+</div>

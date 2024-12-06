@@ -1,0 +1,32 @@
+{
+  "salas": [
+    {
+      "id": "1",
+      "nome": "Sala de Reunião A",
+      "capacidade": 10,
+      "disponibilidade": true,
+      "localizacao": "2º Andar, Bloco A"
+    },
+    {
+      "id": "2",
+      "nome": "Auditório Principal",
+      "capacidade": 50,
+      "disponibilidade": false,
+      "localizacao": "Térreo, Bloco C"
+    },
+    {
+      "id": "3",
+      "nome": "Sala de Treinamento B",
+      "capacidade": 20,
+      "disponibilidade": true,
+      "localizacao": "3º Andar, Bloco B"
+    },
+    {
+      "id": "4",
+      "nome": "Sala de Conferências",
+      "capacidade": 30,
+      "disponibilidade": true,
+      "localizacao": "1º Andar, Bloco A"
+    }
+  ]
+}

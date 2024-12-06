@@ -1,0 +1,38 @@
+<div class="container">
+    <h3>Tabela de Salas</h3>
+
+    <div class="mb-3">
+        <label for="nome" class="form-label">Pesquisa:</label>
+        <input [(ngModel)]="nomePesquisado" class="form-control"
+            id="nome" placeholder="Nome da sala...">
+    </div>
+
+    <h4 *ngIf="(listaSalas | filtroPesquisa:nomePesquisado).length == 0">
+        Não há salas cadastradas!
+    </h4>
+    <table class="table table-striped" *ngIf="(listaSalas | filtroPesquisa:nomePesquisado).length > 0">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Capacidade</th>
+                <th>Equipamentos</th>
+                <th>Localização</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let sala of listaSalas | filtroPesquisa:nomePesquisado">
+                <td>{{ sala.id }}</td>
+                <td>{{ sala.nome }}</td>
+                <td>{{ sala.capacidade }}</td>
+                <td>{{ sala.equipamentos }}</td>
+                <td>{{ sala.localizacao }}</td>
+                <td>
+                    <a class="btn btn-primary me-2" routerLink="/edit/{{ sala.id }}">Editar</a>
+                    <button class="btn btn-danger" (click)="deletar(sala.id)">Deletar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,143 @@
+/* home.component.css */
+/* home.component.css */
+
+/* Estilo da barra de navegação */
+nav {
+    background-color: #343a40; /* cor preta */
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff; /* cor do texto branca */
+    padding: 10px 20px;
+  }
+  
+  nav .nav-link:hover {
+    background-color: #495057; /* cor do hover (cinza escuro) */
+    border-radius: 5px;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff; /* cor branca para o ícone de menu em telas menores */
+  }
+  
+/* Estilo do título principal */
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0a0a0a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+  }
+  
+  /* Estilo da barra de navegação */
+  nav {
+    background-color: #111111; /* cor de fundo da navbar */
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  nav .nav-link:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+  
+  /* Estilo do conteúdo principal */
+  .container {
+    margin-top: 60px;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .row {
+    margin-top: 30px;
+  }
+  
+  button {
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  .btn-lg {
+    font-size: 1.2rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  /* Estilo do rodapé ou informações adicionais */
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 1rem;
+    color: #aaa;
+  }
+  
+  /* Card de funcionalidades adicionais */
+  .row.mt-5 {
+    margin-top: 50px;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #777;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
